@@ -1,0 +1,6 @@
+flowchart TD
+    A["Start from a guess<br>for slope and intercept"] --> B["Compute the gradient<br>of the MSE"]
+    B --> C{"Is the gradient<br>almost zero?"}
+    C -- "yes" --> D["Stop:<br>the line is fitted"]
+    C -- "no" --> E["Update both parameters:<br>new = old - learning rate × gradient"]
+    E --> B

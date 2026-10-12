@@ -1,0 +1,4 @@
+flowchart LR
+    A["Step 1<br>make_line()<br>predict y from slope and intercept"] --> B["Step 2<br>mse()<br>score the line"]
+    B --> C["Step 3<br>calc_gradient()<br>which way is downhill?"]
+    C --> D["Step 4<br>the loop<br>step downhill, repeat"]
